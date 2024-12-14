@@ -1,0 +1,116 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-image: url('/static/images/bgHome.jpg'); /* Path to your background image */
+    background-size: cover; /* Ensure it covers the entire page */
+    background-position: center; /* Keep the image centered */
+    background-attachment: fixed; /* Keeps the image fixed while scrolling */
+    color: #333;
+    height: 100vh; /* Ensure the body takes full height of the viewport */
+    display: flex;
+    flex-direction: column; /* Stack header, main content, and footer vertically */
+}
+
+/* Main Content (ensures content fills available space) */
+main {
+    flex-grow: 1; /* Allow the main content to take up remaining space */
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(26, 26, 26, 0.7); /* Dark overlay for header */
+    color: #fff;
+    padding: 1rem 2rem;
+}
+
+header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ff9900;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: 500;
+}
+
+.login-btn {
+    background: #ff9900;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    padding: 4rem 2rem;
+    position: relative;
+    z-index: 1; /* Ensure it is above the background */
+}
+
+/* Hero Text */
+.hero-text {
+    max-width: 50%;
+}
+
+/* Badge */
+.hero-text .badge {
+    background: #ff9900;
+    color: #fff;
+    padding: 0.3rem 0.8rem;
+    border-radius: 5px;
+}
+
+/* Hero Headline */
+.hero-text h1 {
+    font-size: 3rem;
+    margin: 1rem 0;
+}
+
+/* Hero Paragraph */
+.hero-text p {
+    line-height: 1.5;
+}
+
+/* Hero Buttons */
+.buttons {
+    margin-top: 1.5rem;
+}
+
+.btn-orange, .btn-green {
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    margin-right: 1rem;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.btn-orange {
+    background: #ff9900;
+}
+
+.btn-green {
+    background: #28a745;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: #1a1a1a;
+    color: #fff;
+    margin-top: auto; /* Push the footer to the bottom */
+}
