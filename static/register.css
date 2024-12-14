@@ -1,0 +1,260 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #ffffff;
+}
+/* Fona attēls */
+.bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('/static/images/loginbg.jpg'); /* Adjust image path */
+    background-size: cover;
+    background-position: center;
+    filter: blur(0px); 
+    z-index: -1; /* Keep the background behind the content */
+    opacity: 0.9;
+}
+
+/* Reģistrācijas logs */
+    /* Visa grupa */
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+    /* Logs */
+.register-box {
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 20px 20px; /* Adjusted padding for better space inside the box */
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px; /* Ensures the box has a minimum height */
+    margin: 0;
+    position: absolute;
+    left: 35%;
+}
+
+
+/* Heading Styling */
+h2 {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-weight: 600;
+
+}
+p {
+    color: white;
+}
+
+/* Ziņojumi/kļūdas */
+.alert {
+    background-color: #f8d7da;
+    color: #c61a11;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.alert ul {
+    list-style-type: none;
+    padding: 0;
+}
+.alert {
+    background-color: #f8d7da;
+    color: #c61a11;
+    padding: 5px 22px; /* Reduced padding for a smaller alert box */
+    border-radius: 5px;
+    margin-bottom: 10px; /* Reduced bottom margin */
+    font-size: 0.875rem; /* Smaller font size */
+    transition: opacity 0.5s ease-out;
+
+}
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+}
+.alert-danger {
+    background-color: #f8d7da;
+    color: #721c24;
+    max-height: 100px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+    width: 130%;
+    position: relative;
+    right: 30px;
+}
+
+/* Label Styling */
+.input-group label {
+    font-size: 1rem;
+    display: block;
+    margin-bottom: 8px;
+    color: white;
+
+}
+
+/* Input Field Styling */
+.input-field {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #dddddd60;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #333333;
+    background-color: #f9f9f92e;
+    box-sizing: border-box;
+    transition: border 0.3s ease;
+    height: 40px;
+}
+
+.input-field:focus {
+    border: 1px solid #007bff;
+    outline: none;
+}
+
+/* Submit Button Styling */
+.btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #2d2d2d;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #1c1c1c;
+}
+
+/* Register Link Styling */
+.register-link {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.register-link a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 600px) {
+    .login-box {
+        padding: 25px 20px;
+        width: 90%;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .input-field {
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+    }
+}
+
+
+/* Navigācija uz sākumu no register*/
+.navbar_R {
+    backdrop-filter: blur(40px);
+    border-color: rgba(255, 255, 255, 0.833);
+    border-radius: 10px;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    top: 278px;
+    left: 0px;
+}
+
+.navbar_R .container_R {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #ffffff;
+}
+
+
+
+.navbar {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    top: -190px;
+
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+
+}
+
+.nav-link:hover {
+    color: #bdbdbd;
+
+
+}
+
+.login-message {
+    display: none;
+}

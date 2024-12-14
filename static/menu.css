@@ -1,3 +1,4 @@
+
 /* Menu Section */
 /* Background for the entire page */
 body {
@@ -8,7 +9,7 @@ body {
 /* Menu Section */
 .menu {
     text-align: center;
-    padding: 3rem 2rem;
+    padding: 3rem 300px;
     position: relative; /* To position the pseudo-element correctly */
     overflow: hidden; /* Hide anything outside the bounds */
     background-image: url('/static/images/bg.jpg'); /* Path to the uploaded pizza image */
@@ -16,6 +17,7 @@ body {
     background-position: bottom center;
     background-attachment: fixed;
     z-index: 1;
+    
 }
 
 /* Add blur effect to the background */

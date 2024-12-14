@@ -25,28 +25,90 @@ header {
     background: rgba(26, 26, 26, 0.7); /* Dark overlay for header */
     color: #fff;
     padding: 1rem 2rem;
+    flex-wrap: nowrap; /* Prevent wrapping for elements */
+    position: relative;
+    z-index: 10;
 }
 
+/* Logo */
 header .logo {
     font-size: 1.5rem;
     font-weight: bold;
     color: #ff9900;
 }
 
+/* Navigation links */
+nav {
+    display: flex;
+    gap: 1rem; /* Space between navigation links */
+
+}
+
 nav a {
     color: #fff;
     text-decoration: none;
-    margin: 0 1rem;
     font-weight: 500;
 }
 
-.login-btn {
-    background: #ff9900;
-    color: #fff;
-    border: none;
+/* Login Button */
+.logged-in-buttons {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+/* Profile and Logout Buttons */
+.profile-btn, .logout-btn {
+    background-color: #ff9900;
+    color: white;
     padding: 0.5rem 1rem;
     border-radius: 5px;
-    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: 1rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Profile Button */
+.profile-btn {
+    background-color: #ff9900;
+}
+
+.profile-btn:hover {
+    background-color: #e68a00;
+    transition: background-color 0.3s ease;
+}
+
+/* Logout Button */
+.logout-btn {
+    background-color: #d9534f;
+}
+
+.logout-btn:hover {
+    background-color: #c9302c;
+    transition: background-color 0.3s ease;
+}
+
+/* Profile and Logout Icons */
+.profile-btn img, .logout-btn img {
+    width: 15px;  /* Resize icons to fit inside the button */
+    height: 15px;
+    margin-right: 0rem; /* Space between icon and text */
+    vertical-align: middle;  /* Align icons properly with text */
+}
+
+/* Adjust size of buttons when hovering */
+.profile-btn:hover, .logout-btn:hover {
+    background-color: #e68a00;
+    transition: background-color 0.3s ease;
+}
+
+/* Make sure the buttons do not stretch too much */
+.profile-btn, .logout-btn {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;  /* Set font size for better readability */
 }
 
 /* Hero Section */
